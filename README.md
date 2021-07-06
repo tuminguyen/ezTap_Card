@@ -59,6 +59,6 @@ pip install -r requirements.txt
 
 - [Python program for QR Code and Barcode Reader](https://github.com/tuminguyen/QR_Barcode_Reader)
 
-- [Python QR reader and writer (only QR, simple)](https://github.com/tuminguyen/ezTap_Card/QR.py)
+- [Python QR reader and writer (only QR, simple)](https://github.com/tuminguyen/ezTap_Card/blob/master/QR.py)
 
 - [Python module for read/write NFC card](https://github.com/nfcpy/nfcpy)
