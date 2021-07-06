@@ -4,7 +4,7 @@ This repo contains design site for freely creating your own card and save it as 
 
 ![demo-card](demo_card.png)
 
----
+
 ## USAGE
 
 Simple step to make a readable NFC card
@@ -12,12 +12,21 @@ Simple step to make a readable NFC card
 *Create link information* 
 
 - Use [LINKTREE](https://linktr.ee/) to create a link which contains all your information.
+
 - Save your personal Linktree's link for later use.
 
 **Design the card appearance as your preference**
+- Clone this project 
+```
+git clone https://github.com/tuminguyen/ezTap_Card
+```
+
+- Go to the project, open design folder then access the HTML file via your browser.
 
 - Follow the instruction on screen to finish your edit.
+
 - Paste the link in the previous step into the input field of QR Code tab 
+
 - Save your final design as PDF.
 
 **Print your design (with color)**
@@ -31,9 +40,10 @@ You can download NFCTools on your phone to write the card.
 
 **Time to test**
 
----
+
 ## ENVIRONMENT
 - Ubuntu 20.04
+
 - Python 3.7
 
 
