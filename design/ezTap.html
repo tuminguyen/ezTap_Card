@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ezTap - Design your own card</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="tuminguyen">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/ezTap.css">
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="preview-card">
+                            <div id='ezt-logo' class="preview-elem"></div>
+                            <div id='qr-scan' class="preview-elem"></div>
+                            <p id='designed-name' class="preview-elem"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="maintext text-center title" id="test">
+                            <h1 id="gen-title"></h1>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openVisualization(event, 'bground')">Background</button>
+                            <button class="tablinks" onclick="openVisualization(event, 'name')">Name</button>
+                            <button class="tablinks" onclick="openVisualization(event, 'qr')">QR Code</button>
+                            <button class="tablinks" onclick="openVisualization(event, 'logo')">Logo</button>
+                          </div>
+                          <!-- -----------------BACKGROUND----------------- -->
+                          <div id="bground" class="tabcontent">
+                              <div id='bg-usage'>
+                                <p>Select background image for your card</p>
+                                <ul>
+                                    <li>Minimum size 1105 x 700 px</li>
+                                    <li>Acceptable extension: JPG, JPEG, PNG</li>
+                                </ul>
+                              </div>
+                              <input type="file" name="filename" id="bg-file" onchange="readBackground(this);" accept="image/jpg, image/jpeg, image/png">
+                          </div>
+                          <!-- -----------------E: BACKGROUND----------------- -->
+                          <!-- -----------------S: NAME----------------- -->
+                          <div id="name" class="tabcontent">
+                            <p><strong>Usage: </strong> Change your name here then press Enter</p>
+                            <div id='name-edit-group'>
+                                <input id="name-txt" placeholder="Tumi Nguyen" value="Tumi Nguyen">
+                                <div class="size-slider">
+                                    <input type="range" min="20" max="76" class="slider" id="font-zoom" value="57">
+                                    <p id="font-value"></p>
+                                    <div id='name-color'>
+                                        <div id="color-ffffff"></div>
+                                        <div id="color-2f4f4f"></div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- -----------------E: NAME----------------- -->
+                          <!-- -----------------S: QR----------------- -->
+                          <div id="qr" class="tabcontent">
+                              <div class="col-md-6 col-sm-6 col-xs-6">
+                                <p><strong>Usage: </strong> Type any kind of messages or links to the input field. 
+                                    Press Enter or click elsewhere outside the input field to generate the code</p>
+                                <input id="qr-text" placeholder="https://google.com", value="https://google.com">
+                                <div class="size-slider">
+                                    <p>Drag the slider to change the QR image size on card</p>
+                                    <input type="range" min="45" max="150" class="slider" id="qr-zoom" value="100">
+                                    <p id="qr-zoom-value"></p>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div id='qr-code'></div>
+                              </div>
+                          </div>
+                          <!-- -----------------E: QR----------------- -->
+                          <!-- -----------------S: LOGO-----------------  -->
+                          <div id="logo" class="tabcontent">
+                              <p>
+                                Pick one logo from images below.                                    
+                              </p>
+                              <div id='logo-picker'>
+                                    <div class="logo-slider owl-carousel">
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-1.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-1-1.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-1-2.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-1-3.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-2.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-2-1.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-2-2.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-2-3.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-2-4.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-2-5.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-3.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-4.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-4-1.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-5.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-5-1.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-5-2.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-5-3.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-5-4.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-6.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-6-1.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/logo-6-2.png">
+                                        </div>
+                                        <div class="slide-content item">
+                                            <img src="logo/sample-logo.png">
+                                        </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <!-- -----------------E: LOGO----------------- -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            
+        </script>
+        <script>
+            window.onclick = e => {
+                var nameColor = document.getElementById('name-color')
+                var logoArea = document.getElementById('logo-picker');
+                if (logoArea.contains(e.target)) {
+                    var longPath = e.target.src;
+                    var logoSrc = longPath.split("/").pop();
+                    $('#ezt-logo').css('background-image', 'url("logo/' + logoSrc + '")');
+                }
+                if (nameColor.contains(e.target)){
+                    var pickId = e.target.id;
+                    colorId = pickId.split("-").pop();
+                    console.log(colorId);
+                    $('#designed-name').css('color', '#' + colorId);
+                }
+            }
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/qrcode.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="js/ezTap.js"></script>
+    </body>
+
+</html>
+
+
