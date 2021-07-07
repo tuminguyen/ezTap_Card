@@ -36,7 +36,7 @@ Remember to choose _Fit to width_ before printing it
 
 **Write information to the card**
 
-You can download NFCTools on your phone to write the card. 
+You can download [NFCTools](https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=en&gl=US) on your phone to write the card. 
 
 **Time to test**
 
@@ -62,3 +62,8 @@ pip install -r requirements.txt
 - [Python QR reader and writer (only QR, simple)](https://github.com/tuminguyen/ezTap_Card/blob/master/QR.py)
 
 - [Python module for read/write NFC card](https://github.com/nfcpy/nfcpy)
+
+- JS packages: 
+    - [jsPDF](https://github.com/MrRio/jsPDF)
+    - [html2pdf](https://github.com/eKoopmans/html2pdf.js?files=1)
+    - [html2canvas](https://github.com/niklasvh/html2canvas)
