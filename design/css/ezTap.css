@@ -93,6 +93,7 @@ section .container {
     width: 728px;
     background-repeat: no-repeat;
     margin: 50px auto;
+    background-color: #ffffff;
     background-size: cover;
     border: 1px solid;
     position: relative;
