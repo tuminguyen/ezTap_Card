@@ -18,7 +18,10 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="preview-card" id='preview'>
-                            <div id='ezt-logo' class="preview-elem"></div>
+                            <img id="bgImg" src="">
+                            <div id='ezt-logo' class="preview-elem">
+                                <img id="logoImg" src="logo/logo-4-1.png">
+                            </div>
                             <div id='qr-scan' class="preview-elem"></div>
                             <p id='designed-name' class="preview-elem"></p>
                         </div>
@@ -178,7 +181,7 @@
                 if (logoArea.contains(e.target)) {
                     var longPath = e.target.src;
                     var logoSrc = longPath.split("/").pop();
-                    $('#ezt-logo').css('background-image', 'url("logo/' + logoSrc + '")');
+                    $('#logoImg').attr('src', "logo/" + logoSrc);
                 }
                 if (nameColor.contains(e.target)){
                     var pickId = e.target.id;
@@ -194,7 +197,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-        <script src="js/export.bundle.js"></script>
+        <script src="js/export.scale.bundle.min.js"></script>
         <script src="js/ezTap.js"></script>
     </body>
 

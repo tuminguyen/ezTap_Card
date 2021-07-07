@@ -63,7 +63,7 @@ function readBackground(input) {
       var reader = new FileReader();
 
       reader.onload = function (e) {
-          $('.preview-card').css('background-image', 'url("' + e.target.result + '")');
+        $('#bgImg').attr('src', '' +e.target.result);
       };
 
       reader.readAsDataURL(input.files[0]);

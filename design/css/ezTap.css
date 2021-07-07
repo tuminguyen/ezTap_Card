@@ -89,16 +89,21 @@ section .container {
 
 .preview-card{
     background-position: center;
-    background-size: cover;
     height: 460px;
     width: 728px;
     background-repeat: no-repeat;
     margin: 50px auto;
     background-color: rebeccapurple;
+    background-size: cover;
     border: 1px solid;
     position: relative;
 }
 
+
+#bgImg {
+    width: 100%;
+    height: 100%;
+}
 
 .preview-elem {
     position: absolute;
@@ -175,9 +180,12 @@ div #color-ffffff{
     width: 150px;
     top: 30px;
     left: 30px;
-    background: url('../logo/logo-2-2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+#logoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
