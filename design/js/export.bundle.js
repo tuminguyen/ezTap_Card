@@ -6,7 +6,6 @@ saveBtn.onclick = function() {
     var card = document.getElementById('preview'); 
     var options = {
         margin: 10,
-
         filename: 'ezTap-card-download(by_tuminguyen).pdf',
         image: { type: 'jpeg', quality: 1},
         html2canvas: {dpi: 300, logging:true, scale: 0.5},
@@ -14,12 +13,6 @@ saveBtn.onclick = function() {
 
     };
     var exporter = new html2pdf(card, options);
-
-    options.source = element;
-    options.download = true;
-    exportPDF.getPdf(options);
-    
-    
 } 
 
 
