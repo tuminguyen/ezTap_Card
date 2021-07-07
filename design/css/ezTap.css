@@ -93,7 +93,6 @@ section .container {
     width: 728px;
     background-repeat: no-repeat;
     margin: 50px auto;
-    background-color: rebeccapurple;
     background-size: cover;
     border: 1px solid;
     position: relative;
@@ -124,9 +123,8 @@ section .container {
     margin-right: 30px;
     bottom: 10px;
     font-family: sans-serif;
-    font-size: 57px;
-    color: #ffffff;
-    /* -webkit-text-stroke: 2px black; */
+    font-size: 54px;
+    color: #2f4f4f;
 }
 
 
