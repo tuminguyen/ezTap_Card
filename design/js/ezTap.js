@@ -25,7 +25,6 @@ function makeName () {
   if (!nameTxt.value) { // if empty string
     alert("Please fill in your name.");
     nameTxt.focus();
-    return;
   }
   document.getElementById('designed-name').innerHTML = nameTxt.value;
 }
