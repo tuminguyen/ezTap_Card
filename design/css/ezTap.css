@@ -187,6 +187,12 @@ div #color-ffffff{
     object-fit: contain;
 }
 
+/* export */
+
+#export p {
+    margin-bottom: 15px;
+}
+
 
 /* OWL CAROUSEL */
 
